@@ -3,17 +3,19 @@
 
 # Say hello and then spin in circles.
 
-# The ev3dev Python library 
-from ev3dev.ev3 import *
-
 from time import sleep
 
+# The ev3dev Python library
+from ev3dev.ev3 import *
+
 #                     the output port
-# Setup motors             V 
+# Setup motors             V
 left_motor = LargeMotor('outB')
 right_motor = LargeMotor('outC')
 
+
 # A text to speech method from the ev3dev Python library
+
 Sound.speak('Hello World!').wait()
 
 #        keyword argument for speed set point (-1000-1000)
